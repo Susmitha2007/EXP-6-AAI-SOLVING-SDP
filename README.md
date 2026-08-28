@@ -193,9 +193,8 @@ Edit these values near the top of the script to experiment with other MDPs:
 - Terminal-state utilities stay fixed at their assigned rewards.
 - The policy grid includes a label for every non-terminal coordinate, including the blocked coordinate. Since that cell cannot be entered, its displayed action is not part of the reachable environment.
 
-- ## Program
+## Program
 
-- # exp 6
 import numpy as np
 
 # 1. Setup Grid Dimensions
@@ -304,6 +303,7 @@ for r in range(rows):
     for c in range(cols):
         p_grid[r, c] = policy[(r, c)]
 print(np.flipud(p_grid))
+
 
 ## Output
 
