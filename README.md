@@ -303,12 +303,3 @@ for r in range(rows):
     for c in range(cols):
         p_grid[r, c] = policy[(r, c)]
 print(np.flipud(p_grid))
-
-
-## Output
-
-<img width="491" height="170" alt="image" src="https://github.com/user-attachments/assets/4c1e553f-80e7-4de6-bd6b-223d63bf7259" />
-
-## Result
-
-Thus, the Grid-World MDP was successfully solved using Value Iteration. The optimal utilities and policy were obtained, guiding the agent toward the goal while avoiding the trap.
