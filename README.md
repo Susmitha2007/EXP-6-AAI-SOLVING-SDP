@@ -195,6 +195,7 @@ Edit these values near the top of the script to experiment with other MDPs:
 
 ## Program
 
+```
 import numpy as np
 
 # 1. Setup Grid Dimensions
@@ -303,3 +304,12 @@ for r in range(rows):
     for c in range(cols):
         p_grid[r, c] = policy[(r, c)]
 print(np.flipud(p_grid))
+```
+## Output
+
+<img width="546" height="170" alt="image" src="https://github.com/user-attachments/assets/a86c6ded-6f0f-4eb7-a654-9b8d15747a91" />
+
+## Result
+
+Thus, the Grid-World MDP was successfully solved using Value Iteration. The optimal utilities and policy were obtained, guiding the agent toward the goal while avoiding the trap.
+
